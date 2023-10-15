@@ -1,9 +1,9 @@
 const express = require("express");
 const mongoose= require('mongoose');
 const router = express.Router();
-const Employee = require("../models/Employee"); // Import your Mongoose model
+const Employee = require("../models/Employee");
 
-// Middleware to check if the database is connected
+//check if the database is connected
 const checkDatabaseConnection = (req, res, next) => {
     if (mongoose.connection.readyState !== 1) {
         return res

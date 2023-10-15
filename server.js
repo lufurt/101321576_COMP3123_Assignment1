@@ -10,7 +10,7 @@ const SERVER_PORT = 3004
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 
-const DB_CONNECTION_STRING = "mongodb+srv://raunymartinelli:bfvQt3H3Rlsi5q7g@cluster0.ws44tvx.mongodb.net/comp3123_assignment1?retryWrites=true&w=majority"
+const DB_CONNECTION_STRING = "mongodb+srv://lufurt:PL6s8pg4Y3Cdrn3Z@cluster0.siktfkx.mongodb.net//comp3123_assignment1?retryWrites=true&w=majority"
 mongoose.connect(DB_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true
